@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recycle2Save</string>
+    <string name="title_location_permission">Allow ScanMePoc to access your location?</string>
+    <string name="ok">Allow</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/custom_tool_bar"
+        android:id="@+id/customToolbarLeader"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/leaderImage"
+        android:layout_below="@id/customToolbarLeader"
+        android:background="@drawable/leader_board"
+        >
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderImage"
+        android:id="@+id/leaderName"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@+id/centerText"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:id="@+id/leaderNameinList"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:id="@+id/centerText"
+            android:text="|"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/centerText"
+            android:textSize="20sp"
+            android:id="@+id/leaderCountry"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderName"
+        android:id="@+id/leaderScore"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:layout_marginTop="15dp"
+             android:layout_toLeftOf="@+id/centerImage"
+            android:textSize="12sp"
+            android:text="Carbon footprint"
+            android:id="@+id/loyalityPoint"
+
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="1443"
+            android:layout_toLeftOf="@+id/centerImage"
+            android:gravity="center"
+            android:id="@+id/loyalityNumber"
+            android:textStyle="bold"
+
+            android:layout_alignTop="@+id/rankNumber"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shield"
+            android:id="@+id/centerImage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/centerImage"
+            android:textSize="12sp"
+            android:text="Overall Rank"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rank"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/centerImage"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rank"
+            android:id="@+id/rankNumber"
+            android:text="31"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/leaderScore"
+        android:id="@+id/leaderList"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
+</ScrollView>

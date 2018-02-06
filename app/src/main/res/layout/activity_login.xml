@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_login"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:id="@+id/username"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="15sp"
+        android:textCursorDrawable="@null"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:background="#FFFFFF"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/password"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/username"
+        android:textCursorDrawable="@null"
+        android:layout_alignLeft="@id/username"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:id="@+id/login"
+        android:background="#42bcf4"
+        android:text="Login"
+        android:layout_alignLeft="@id/password"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone"
+        android:indeterminateTint="#42bcf4"/>
+
+</RelativeLayout>

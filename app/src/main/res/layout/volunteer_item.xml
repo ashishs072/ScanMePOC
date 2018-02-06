@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagevolunteer"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="P&amp;G Vision is to one day report it has "
+        android:textSize="15sp"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:id="@+id/volunteerHeading"
+        android:textColor="#42bcf4"
+        android:layout_marginStart="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="P&amp;G Vision is to one day report it has "
+        android:textSize="12sp"
+        android:layout_below="@id/volunteerHeading"
+        android:id="@+id/volunteerDescription"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:layout_marginStart="15dp"
+         />
+
+</RelativeLayout>

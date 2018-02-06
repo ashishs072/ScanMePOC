@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/custom_tool_bar"
+        android:id="@+id/cutomToolbar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cutomToolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#42bcf4"
+        android:id="@+id/heading"
+        android:textSize="15sp"
+        android:text="How you can recycle this product"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cameraCapture"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/aboutHeading"
+    android:text="Lorem Ipsum Shampoo"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:layout_marginTop="20dp"
+    android:layout_alignLeft="@id/cameraCapture"
+    android:layout_below="@id/cameraCapture" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryName"
+        android:layout_alignParentRight="true"
+        android:text="Lorem Ipsum Shampoo"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cameraCapture" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/captureDescription"
+        android:text="Lorem Ipsum Shampoo"
+        android:textSize="13sp"
+        android:layout_below="@id/aboutHeading"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignLeft="@id/aboutHeading"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        android:text="Source:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/captureDescription"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/aboutHeading"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sourcelink"
+        android:autoLink="web"
+        android:textSize="12sp"
+        android:layout_below="@id/captureDescription"
+        android:layout_toRightOf="@id/source"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agencyName"
+        android:text="Agency Name:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/source"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/aboutHeading"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameAgency"
+        android:textSize="12sp"
+        android:layout_below="@id/source"
+        android:layout_toRightOf="@id/agencyName"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/website"
+        android:text="Website:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/agencyName"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/aboutHeading"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AgencyWebsite"
+        android:autoLink="web"
+        android:textSize="12sp"
+        android:layout_below="@id/agencyName"
+        android:layout_toRightOf="@id/website"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/image_recycler"
+        android:layout_below="@id/website"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</ScrollView>

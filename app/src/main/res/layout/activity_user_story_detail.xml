@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/custom_tool_bar"
+            android:id="@+id/customToolbar"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/imageSection"
+            android:layout_below="@id/customToolbar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/likeNumber"
+                android:layout_marginTop="10dp"
+                android:id="@+id/favourite"
+                android:src="@drawable/favorite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/share"
+                android:layout_marginTop="10dp"
+                android:text="187"
+                android:id="@+id/likeNumber"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                />
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/edit"
+                />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/share"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/share"
+
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/img_my_story"
+            android:id="@+id/cameraCapture"
+            android:layout_below="@+id/imageSection"
+            android:layout_alignStart="@+id/heading" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cameraCapture"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#42bcf4"
+            android:id="@+id/heading"
+            android:textSize="18sp"
+            android:text="Product Similar to yours"
+            android:textStyle="bold"
+            />
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createDate"
+            android:layout_below="@id/heading"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollViewitem"
+            android:layout_below="@id/heading"
+
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionDetail"
+                android:gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:textSize="13sp"
+                android:layout_below="@id/cameraCapture"
+                />
+
+        </ScrollView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/scrollViewitem"
+            android:layout_marginTop="20dp"
+            android:id="@+id/greenImage"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/think_green"
+
+            />
+
+        <EditText
+            android:id="@+id/userComment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top|left"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/greenImage"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_border_line" />
+
+        <Button
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userComment"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Comment" />
+
+        <Button
+            android:id="@+id/cencel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/userComment"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Cencel" />
+    </RelativeLayout>
+
+
+</ScrollView>

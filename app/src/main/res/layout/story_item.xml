@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+<ImageView
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img_my_story"
+    android:id="@+id/imageStory"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageStory"
+        android:text="This is MyStory Description"
+        android:layout_marginLeft="25dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/descriptionStory"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageStory"
+        android:text="This is complete story"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:id="@+id/storyHeading"
+        android:layout_alignLeft="@id/descriptionStory"
+        android:layout_below="@id/descriptionStory"/>
+</RelativeLayout>
